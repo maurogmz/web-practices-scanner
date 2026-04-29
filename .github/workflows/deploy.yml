@@ -1,0 +1,13 @@
+name: Deployment Simulation
+on:
+  push:
+    branches: [ main ]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploying to Production
+        run: |
+          echo "Desplegando software..."
+          sleep 5
+          echo "Despliegue exitoso"
